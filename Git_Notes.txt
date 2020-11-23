@@ -1,0 +1,11 @@
+#1. to know on which branch we are on currentlz
+
+	git branch
+
+#2. to clone a repo from server to client machine
+
+	git clone https://github.com/slg-any/my_lerning_play_ground.git
+	
+#3.pull - pulls chnages/updates from remote(server) repository to local repository
+
+	git pull
