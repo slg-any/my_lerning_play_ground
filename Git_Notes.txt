@@ -9,3 +9,42 @@
 #3.pull - pulls chnages/updates from remote(server) repository to local repository
 
 	git pull
+
+#4. status the working directorz chnages
+	git status
+
+#5. git add filename1 filename2.....
+	
+	git add .	#adds **all** changed files in the current workspace to index area
+	adds changed files from workspace to index/staging area
+
+#6. git status - status in green
+
+#7. restore
+
+	git restore --staged filename1 filename2
+	git restore --staged .
+
+	restores all added files from Index area to workspace
+
+#8. commit
+
+	git commit -m "Commit message"
+
+	commits all files in index area/staging area to local repository
+
+#9. status
+
+	git status #ur local branch is ahead of origin by 1 commit
+
+#10. push
+
+	git push origin
+
+	pushes the local repository into remote repository
+
+#11.log
+
+	git log	#displazs all commits
+
+	git log -n 1	#display recent last commit information
