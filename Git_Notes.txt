@@ -1,3 +1,6 @@
+Link: https://www3.ntu.edu.sg/home/ehchua/programming/howto/Git_HowTo.html
+
+
 #1. to know on which branch we are on currently
 
 	git branch
@@ -6,6 +9,16 @@
 
 	git clone https://github.com/slg-any/my_lerning_play_ground.git
 	
+// SYNTAX
+// ======
+$ git clone <remote-url>
+   // <url>: can be https (recommended), ssh or file.
+   // Clone the project UNDER the current directory
+   // The name of the "working directory" is the same as the remote project name
+$ git clone <remote-url> <working-directory-name>
+   // Clone UNDER current directory, use the given "working directory" name
+
+
 #3.pull - pulls changes/updates from remote(server) repository to local repository(workspace)
 
 	git pull
@@ -48,3 +61,26 @@
 	git log	#displays all commits
 
 	git log -n 1	#displays recent last commit information
+
+	
+	$ git log --oneline
+   // Display EACH commit in one line.
+ 
+$ git log --author="<author-name-pattern>"
+   // Display commits by author
+   
+$ git log <file-pattern>
+   // Display commits for particular file(s)
+
+// EXAMPLES
+$ git log --author="Tan Ah Teck" -p Hello.java
+   // Display commits for file "Hello.java" by a particular author
+
+
+// Stage file changes, which produces "Staged" file changes
+$ git add <file>                          // for new and modified files
+$ git rm <file>                           // for deleted files
+$ git mv <old-file-name> <new-file-name>  // for renamed file
+
+
+
